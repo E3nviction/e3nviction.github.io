@@ -219,7 +219,7 @@ img {
 	align-items: center;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
 	.feature {
 		flex-direction: column !important;
 	}
@@ -256,7 +256,7 @@ img {
 	text-align: center;
 }
 .feature-description {
-	width: 20%;
+	width: 40%;
 	border-radius: 15px;
 	overflow: hidden;
 	display: flex;
