@@ -23,7 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(at bottom, #153f99, #153f99, #01010100 60%);
+    background: radial-gradient(circle 1400px at bottom, #153f99, #153f99, #01010100 60%);
 }
 
 #hero-content {
@@ -59,7 +59,7 @@ body {
 }
 
 #about {
-    background: radial-gradient(at top, #153f99, #153f99, #01010100 60%);
+    background: radial-gradient(circle 1400px at top, #153f99, #153f99, #01010100 60%);
 }
 
 #projects {
