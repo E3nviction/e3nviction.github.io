@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    background-color: #010101;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+* {
+	scroll-behavior: smooth;
+}
+
+/* Hero Styles */
+#hero {
+    padding-top: 80px; /* Offset for fixed nav */
+    background-size: 40px 40px;
+    background-image:
+        linear-gradient(to right, #050505 1px, transparent 1px),
+        linear-gradient(to bottom, #050505 1px, transparent 1px);
+}
+
+#hero-gradient {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(at bottom, #153f99, #153f99, #01010100 60%);
+}
+
+#hero-content {
+    padding: 20px;
+    text-align: center;
+}
+
+#hero-title {
+    text-transform: uppercase;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 0.1em;
+    font-size: 5em;
+    background: linear-gradient(172deg, #fff, #2369ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#hero-subtitle {
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+#about-content {
+    padding: 50px;
+    text-align: center;
+    background-color: #1e1e1e;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 50px 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about {
+    background: radial-gradient(at top, #153f99, #153f99, #01010100 60%);
+}
+
+#projects {
+    padding: 50px;
+    text-align: center;
+    background-color: #1e1e1e;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project {
+    background: #151515;
+    padding: 20px;
+	margin: 20px 10px;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.project-links {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+footer {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-left, .footer-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right a {
+    color: #2369ff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+/* Navigation Styles */
+.topnav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(1, 1, 1, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #fff1;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 200px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.nav-brand img {
+    margin: 0;
+	padding: 0;
+	height: 40px;
+	width: 40px;
+	scale: 1.5;
+	transition: all 750ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #588dff;
+    text-decoration: none;
+}
+
+/* Button Styles */
+.hero-buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn.primary {
+    background: #588dff;
+    color: #fff;
+}
+
+.btn.secondary {
+    background: transparent;
+    border: 1px solid #588dff;
+    color: #588dff;
+}
+
+.btn.small {
+    padding: 8px 15px;
+    font-size: 0.9em;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.btn.primary:hover {
+    background: #2369ff;
+}
+
+.btn.secondary:hover {
+    background: #588dff20;
+}
+
+
+
+.skills {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tag {
+	margin: 10px;
+	padding: 5px 10px;
+	background-color: #2369ff55;
+	color: #2369ff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.tag-linux i {
+	color: #ffffff;
+}
+
+.tag-hyprland i {
+	color: #00D0DC;
+}
+
+.lang-tag {
+	margin: 10px;
+	padding: 5px 10px;
+	background-color: #2369ff55;
+	color: #2369ff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.lang-python i {
+	color: #3776AB;
+}
+
+.lang-go i {
+	color: #00ADD8;
+}
+
+.lang-js i {
+	color: #f7df1e;
+}
+
+.lang-react i {
+	color: #61DAFB;
+}
+
+.lang-rust i {
+	color: #111;
+}
+
+.lang-swift i {
+	color: #F05338;
+}
+
+.lang-css i {
+	color: #1572B6;
+}
+
+.lang-html i {
+	color: #E34C26;
+}
+
+.lang-sql i {
+	color: #ffec5c;
+}
+
+.footer-content {
+    padding: 20px 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
