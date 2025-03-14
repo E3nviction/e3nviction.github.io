@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  background-color: #010101;
+  color: #fff;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.project-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 200px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.project {
+  background-color: #151515;
+  padding: 20px;
+  margin: 20px 10px;
+  border-radius: 10px;
+}
+
+.project-title {
+  font-family: 'Courier New', monospace;
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.project-description {
+  color: #ccc;
+  font-size: 0.9em;
+}
+
+.project-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.footer-left, .footer-right {
   display: flex;
   flex-direction: column;
+}
+
+.footer-right a {
+  color: #2369ff;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+/* Button Styles */
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: #588dff;
+  color: #fff;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 1px solid #588dff;
+  color: #588dff;
+}
+
+.btn.small {
+  padding: 8px 15px;
+  font-size: 0.9em;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.btn.primary:hover {
+  background: #2369ff;
+}
+
+.btn.secondary:hover {
+  background: #588dff20;
+}
+
+.tag {
+  margin: 10px;
+  padding: 1rem 1rem;
+  background-color: #111;
+  border: 1px solid transparent;
+  color: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.tag i {
+  padding-right: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tag span {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.tag:hover {
+  background-color: #1e1e1e;
+  border: 1px solid #353535;
+  border-top: 1px solid #404040;
+  border-bottom: 1px solid #303030;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.footer-content {
+  padding: 20px 200px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
