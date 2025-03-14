@@ -1,4 +1,4 @@
-.floating-images {
+.envshell-floating-images {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -7,7 +7,7 @@
 	overflow: hidden;
 	z-index: 3;
 }
-.floating-image {
+.envshell-floating-image {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -16,40 +16,40 @@
 	border-radius: 50%;
 	object-fit: cover;
 }
-.floating-images img:nth-child(1) {
+.envshell-floating-images img:nth-child(1) {
 	top: 15%;
 	left: 5%;
 }
-.floating-images img:nth-child(2) {
+.envshell-floating-images img:nth-child(2) {
 	top: 75%;
 	left: 1%;
 	width: 200px;
 	height: 200px;
 }
-.floating-images img:nth-child(3) {
+.envshell-floating-images img:nth-child(3) {
 	top: 28%;
 	left: 80%;
 	width: 80px;
 	height: 80px;
 }
-.floating-images img:nth-child(4) {
+.envshell-floating-images img:nth-child(4) {
 	top: 73%;
 	left: 90%;
 	width: 150px;
 	height: 150px;
 }
-.floating-images img:nth-child(5) {
+.envshell-floating-images img:nth-child(5) {
 	top: 10%;
 	left: 60%;
 }
 
-#hero {
+#envshell-hero {
 	background-size: 40px 40px;
 	background-image:
 		linear-gradient(to right, #050505 1px, transparent 1px),
 		linear-gradient(to bottom, #050505 1px, transparent 1px);
 }
-#hero-gradient {
+#envshell-hero-gradient {
 	background-size: cover;
 	background-position: center center;
 	height: 100vh;
@@ -58,7 +58,7 @@
 	align-items: center;
 	background: radial-gradient(circle 1400px at bottom, #153f99, #153f99,#01010100 60%);
 }
-#hero-content {
+#envshell-hero-content {
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
@@ -67,7 +67,7 @@
 	text-align: center;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-#hero-title {
+#envshell-hero-title {
 	text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 4px;
 	text-transform: uppercase;
 	font-family: 'Courier New', monospace;
@@ -80,7 +80,7 @@
 	animation: glowing-title 5s ease-in-out infinite;
 }
 
-#hero-subtitle {
+#envshell-hero-subtitle {
 	font-family: 'Courier New', monospace;
 	letter-spacing: 0.1em;
 	color: #fffa;
@@ -99,19 +99,19 @@
 	}
 }
 
-p {
+#envshell-envshell p {
 	text-align: center;
 }
-a {
+#envshell-envshell a {
 	color: #588dff;
 	text-decoration: none;
 	font-weight: bold;
 	text-shadow: 0 0 10px #2369ff;
 }
-a:hover {
+#envshell-envshell a:hover {
 	text-decoration: underline;
 }
-#what {
+#envshell-what {
 	background-size: cover;
 	background-position: center center;
 	height: 100vh;
@@ -120,7 +120,7 @@ a:hover {
 	align-items: center;
 	background: radial-gradient(circle 1400px at top, #153f99, #153f99,#01010100 60%);
 }
-#what-content {
+#envshell-what-content {
 	padding: 5px;
 	margin: 50px;
 	border-radius: 10px;
@@ -129,33 +129,33 @@ a:hover {
 	justify-content: space-around;
 	align-items: center;
 }
-#what img {
+#envshell-what img {
 	width: 100%;
 	height: auto;
 	border-radius: 10px;
 }
-#what-screenshot {
+#envshell-what-screenshot {
 	width: 70%;
 	background-color: #151515;
 	padding: 5px;
 	margin: 0px;
 	border-radius: 15px;
 }
-#what-screenshot p {
+#envshell-what-screenshot p {
 	padding: 0;
 	margin: 0;
 }
-#what h2 {
+#envshell-what h2 {
 	text-align: center;
 	width: 100%;
 }
-.screenshot-wrapper {
+.envshell-screenshot-wrapper {
 	gap: 20px;
 	padding: 20px;
 	margin: 50px;
 	border-radius: 10px;
 }
-.screenshot-container {
+.envshell-screenshot-container {
 	width: calc(100% - 400px);
 	margin: 0 200px;
 	gap: 20px;
@@ -164,7 +164,7 @@ a:hover {
 	justify-content: center;
 	align-items: center;
 }
-.screenshot-container-image {
+.envshell-screenshot-container-image {
 	background-color: #151515;
 	padding: 5px;
 	display: flex;
@@ -174,28 +174,28 @@ a:hover {
 	border-radius: 15px;
 	margin-bottom: 5px;
 }
-.screenshot-container img {
+.envshell-screenshot-container img {
 	width: 100%;
 }
 
-h1 {
+#envshell-envshell h1 {
 	text-align: center;
 	text-shadow: 0 0 10px #fff;
 }
-h2 {
+#envshell-envshell h2 {
 	text-align: center;
 }
-img {
+#envshell-envshell img {
 	width: 100%;
 	height: auto;
 }
-.screenshot {
+.envshell-screenshot {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	border-radius: 10px;
 }
-.feature-container {
+.envshell-feature-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -203,7 +203,7 @@ img {
 	width: calc(100% - 400px);
 	margin: 0 200px;
 }
-.feature {
+.envshell-feature {
 	padding: 20px;
 	margin: 50px;
 	border-radius: 10px;
@@ -214,42 +214,42 @@ img {
 }
 
 @media screen and (max-width: 1024px) {
-	.feature {
+	.envshell-feature {
 		flex-direction: column !important;
 	}
-	.feature-container {
+	.envshell-feature-container {
 		width: 100% !important;
 		margin: 0 !important;
 	}
-	.screenshot-container {
+	.envshell-screenshot-container {
 		width: 100% !important;
 		margin: 0 !important;
 		display: flex !important;
 		flex-direction: column !important;
 	}
-	.feature-description {
+	.envshell-feature-description {
 		width: 100% !important;
 	}
-	.feature-title {
+	.envshell-feature-title {
 		width: 100% !important;
 	}
-	#what-content {
+	#envshell-what-content {
 		flex-direction: column !important;
 	}
-	#what-screenshot {
+	#envshell-what-screenshot {
 		width: 100% !important;
 	}
 }
 
-.top-feature {
+.envshell-top-feature {
 	flex-direction: column;
 }
-.feature-title {
+.envshell-feature-title {
 	width: 40%;
 	padding: 20px;
 	text-align: center;
 }
-.feature-description {
+.envshell-feature-description {
 	width: 40%;
 	border-radius: 15px;
 	display: flex;
@@ -258,7 +258,7 @@ img {
 	align-items: center;
 }
 
-.feature-description.big {
+.envshell-feature-description.big {
 	width: 75%;
 	border-radius: 15px;
 	display: flex;
@@ -267,31 +267,31 @@ img {
 	align-items: center;
 }
 
-.feature-description.big :nth-child(2) {
+.envshell-feature-description.big :nth-child(2) {
 	transform: translate(50px, calc(-100% + 25px));
 	box-shadow: 0 0 20px #000;
 	height: min-content;
 }
 
-.feature-description.big :nth-child(3) {
+.envshell-feature-description.big :nth-child(3) {
 	transform: translate(100px, calc(-200% + 50px));
 	height: min-content;
 }
 
-.row {
+.envshell-row {
 	display: flex;
 	flex-direction: row !important;
 	justify-content: center;
 	align-items: center;
 }
 
-::selection {
+#envshell-envshell ::selection {
 	background-color: #2369ff55;
 	color: #fffa;
 	text-shadow: none;
 }
 
-.tag {
+.envshell-tag {
 	text-align: center;
 	background-color: #2369ff44;
 	color: #2369ff;
@@ -304,76 +304,52 @@ img {
 	transition: all 70ms ease-in-out;
 }
 
-.tag:hover {
+.envshell-tag:hover {
 	background-color: #2369ff;
 	color: #fff;
 	cursor: default;
 }
 
-.tag.success {
+.envshell-tag.success {
 	background-color: #44ff4444;
 	color: #44ff44;
 }
 
-.tag.success:hover {
+.envshell-tag.success:hover {
 	background-color: #44ff44;
 	color: #fff;
 	cursor: default;
 }
 
-.tag.info {
+.envshell-tag.info {
 	background-color: #4444ff44;
 	color: #4444ff;
 }
 
-.tag.info:hover {
+.envshell-tag.info:hover {
 	background-color: #4444ff;
 	color: #fff;
 	cursor: default;
 }
 
-.tag.warning {
+.envshell-tag.warning {
 	background-color: #ff923244;
 	color: #ff9232;
 }
 
-.tag.warning:hover {
+.envshell-tag.warning:hover {
 	background-color: #ff9232;
 	color: #fff;
 	cursor: default;
 }
 
-.tag.danger {
+.envshell-tag.danger {
 	background-color: #ff444444;
 	color: #ff4444;
 }
 
-.tag.danger:hover {
+.envshell-tag.danger:hover {
 	background-color: #ff4444;
 	color: #fff;
 	cursor: default;
-}
-
-footer {
-	border-top: 1px solid #fff1;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.footer-content {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	width: calc(100% - 400px);
-	margin: 0 200px;
-}
-
-.footer-left {
-	width: 40%;
-}
-.footer-right {
-	width: 40%;
 }

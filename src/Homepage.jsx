@@ -71,7 +71,7 @@ function Homepage() {
 			<h1 className="font-mono text-[2em] text-white font-bold">Projects</h1>
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 mt-4">
 				<div className="project">
-					<img src="/src/assets/screenshot-envshell.png" alt="Project Image"/>
+					<img src="https://raw.githubusercontent.com/E3nviction/envshell/refs/heads/master/assets/screenshot-1.png" alt="Project Image"/>
 					<h2 className="project-title">EnvShell</h2>
 					<p className="project-description">A shell designed for Hyprland with macOS-inspired aesthetics.</p>
 					<div class="project-links">
