@@ -9,38 +9,38 @@
 }
 .envshell-floating-image {
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
+	top: 0 !important;
+	left: 0 !important;
+	width: 100px !important;
+	height: 100px !important;
+	border-radius: 50% !important;
 	object-fit: cover;
 }
 .envshell-floating-images img:nth-child(1) {
-	top: 15%;
-	left: 5%;
+	top: 15% !important;
+	left: 5% !important;
 }
 .envshell-floating-images img:nth-child(2) {
-	top: 75%;
-	left: 1%;
-	width: 200px;
-	height: 200px;
+	top: 75% !important;
+	left: 1% !important;
+	width: 200px !important;
+	height: 200px !important;
 }
 .envshell-floating-images img:nth-child(3) {
-	top: 28%;
-	left: 80%;
-	width: 80px;
-	height: 80px;
+	top: 28% !important;
+	left: 80% !important;
+	width: 80px !important;
+	height: 80px !important;
 }
 .envshell-floating-images img:nth-child(4) {
-	top: 73%;
-	left: 90%;
-	width: 150px;
-	height: 150px;
+	top: 73% !important;
+	left: 90% !important;
+	width: 150px !important;
+	height: 150px !important;
 }
 .envshell-floating-images img:nth-child(5) {
-	top: 10%;
-	left: 60%;
+	top: 10% !important;
+	left: 60% !important;
 }
 
 #envshell-hero {
@@ -195,6 +195,18 @@
 	object-fit: cover;
 	border-radius: 10px;
 }
+
+.envshell-screenshot.small {
+	width: 60% !important;
+	height: 60% !important;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.envshell-feature-description.zoomable:hover {
+	scale: 1.5 !important;
+}
+
 .envshell-feature-container {
 	display: flex;
 	flex-direction: column;
@@ -211,6 +223,7 @@
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+	max-height: 1000px !important;
 }
 
 @media screen and (max-width: 1024px) {
@@ -239,6 +252,12 @@
 	#envshell-what-screenshot {
 		width: 100% !important;
 	}
+	#envshell-faq {
+		display: flex !important;
+		flex-direction: column !important;
+		gap: 10px !important;
+		align-items: center !important;
+	}
 }
 
 .envshell-top-feature {
@@ -256,9 +275,10 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	transition: all 0.3s ease-in-out;
 }
 
-.envshell-feature-description.big {
+.envshell-feature-description.envshell-big {
 	width: 75%;
 	border-radius: 15px;
 	display: flex;
@@ -267,13 +287,13 @@
 	align-items: center;
 }
 
-.envshell-feature-description.big :nth-child(2) {
+.envshell-feature-description.envshell-big :nth-child(2) {
 	transform: translate(50px, calc(-100% + 25px));
 	box-shadow: 0 0 20px #000;
 	height: min-content;
 }
 
-.envshell-feature-description.big :nth-child(3) {
+.envshell-feature-description.envshell-big :nth-child(3) {
 	transform: translate(100px, calc(-200% + 50px));
 	height: min-content;
 }
@@ -310,46 +330,85 @@
 	cursor: default;
 }
 
-.envshell-tag.success {
+.envshell-tag.envshell-success {
 	background-color: #44ff4444;
 	color: #44ff44;
 }
 
-.envshell-tag.success:hover {
+.envshell-tag.envshell-success:hover {
 	background-color: #44ff44;
 	color: #fff;
 	cursor: default;
 }
 
-.envshell-tag.info {
+.envshell-tag.envshell-info {
 	background-color: #4444ff44;
 	color: #4444ff;
 }
 
-.envshell-tag.info:hover {
+.envshell-tag.envshell-info:hover {
 	background-color: #4444ff;
 	color: #fff;
 	cursor: default;
 }
 
-.envshell-tag.warning {
+.envshell-tag.envshell-warning {
 	background-color: #ff923244;
 	color: #ff9232;
 }
 
-.envshell-tag.warning:hover {
+.envshell-tag.envshell-warning:hover {
 	background-color: #ff9232;
 	color: #fff;
 	cursor: default;
 }
 
-.envshell-tag.danger {
+.envshell-tag.envshell-danger {
 	background-color: #ff444444;
 	color: #ff4444;
 }
 
-.envshell-tag.danger:hover {
+.envshell-tag.envshell-danger:hover {
 	background-color: #ff4444;
 	color: #fff;
 	cursor: default;
+}
+
+#envshell-faq {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+	gap: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.envshell-faq-question {
+	text-align: center;
+	padding: 1rem;
+	background-color: #222;
+	border: 1px solid #333;
+	border-radius: 10px;
+	margin: 1rem;
+	width: 450px;
+	box-shadow: 0 0 10px #000;
+	transition: all 0s ease-in-out;
+	cursor: pointer;
+}
+
+.envshell-faq-question:hover {
+	background-color: #2369ff;
+	border: 1px solid #2369ff;
+	color: #fff;
+	box-shadow: 0 0 20px #000;
+}
+
+.envshell-faq-question-title {
+	text-align: center;
+	font-size: 2em !important;
+	font-weight: bold !important;
+}
+
+.envshell-faq-question-content {
+	text-align: center;
 }
